@@ -14,7 +14,7 @@
 }
 .wel{
     color:rgb(0, 0, 0);
-    font-size:70px;
+    font-size:65px;
     font-weight: bold;
     display:flex;
     margin-top:-300px;
@@ -51,32 +51,32 @@
 @keyframes flow{
     0%{
         color:rgb(0, 0, 0);
-        font-size:70px;
+        font-size:65px;
         text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0,0,0, 0.8);
     }
     20%{
         color:yellow;
-        font-size:75px;
+        font-size:70px;
         text-shadow: 0 0 10px red, 0 0 20px yellow;
     }
     40%{
         color:rgb(255, 0, 0);
-        font-size:70px;
+        font-size:65px;
         text-shadow: 0 0 10px rgb(242, 255, 0), 0 0 20px rgb(25, 20, 20);
     }
     60%{
         color:rgb(0, 217, 255);
-        font-size:75px;
+        font-size:70px;
         text-shadow: 0 0 10px rgb(25, 20, 20), 0 0 20px rgb(25, 20, 20);
     }
     80%{
         color:yellow;
-        font-size:70px;
+        font-size:65px;
         text-shadow: 0 0 10px rgb(25, 20, 20), 0 0 20px yellow;
     }
     100%{
         color:rgb(0, 217, 255);
-        font-size:75px;
+        font-size:70px;
         text-shadow: 0 0 10px rgba(25, 20, 20), 0 0 20px rgba(25, 20, 20);
     }
 }
