@@ -10,55 +10,54 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:20px;
 }
 .minus{
-    width:170px;
-    height:170px;
+    width:140px;
+    height:140px;
     border-radius: 50%;
     border:none;
     background: yellow;
     color:red;
-    font-size:70px;
+    font-size:50px;
     transition :all .5s;
     font-weight:bold;
     position:absolute;
-    margin-top:600px;
+    margin-top:485px;
+    cursor:pointer;
 }
 .plus{
-    width:350px;
-    height:350px;
+    width:330px;
+    height:330px;
     border-radius: 50%;
     border:none;
     background: yellow;
     color:red;
-    font-size:110px;
+    font-size:90px;
     cursor:pointer;
     transition:all .5s;
     font-weight:bold;
     position:absolute;
     margin-top:-15px;
 }
-.minus:hover , .minus.active{
-    width:185px;
-    height:185px;
+.minus.active{
+    width:150px;
+    height:150px;
     border-radius: 50%;
     border:none;
     background: rgb(0, 255, 229);
     color:rgb(8, 0, 255);
-    font-size:110px;
-    cursor:pointer;
+    font-size:70px;
     font-weight:bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
 }
-.plus:hover , .plus.active{
-    width:400px;
-    height:400px;
+.plus.active{
+    width:350px;
+    height:350px;
     border-radius: 50%;
     border:none;
     background:blue;
     color:yellow;
-    font-size:190px;
+    font-size:140px;
     font-weight:bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
 }
@@ -68,11 +67,11 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 40px;
     white-space: nowrap;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
-    margin-top:-860px;
+    margin-top:-760px;
     position:absolute;
     animation:glow 10s infinite;
 }
@@ -89,11 +88,11 @@
     border-radius: 20px;
     font-weight: bold;
     position:absolute;
-    margin-top:-720px;
+    margin-top:-630px;
 }
 .life{
     min-width:130px;
-    height:90px;
+    height:73px;
     font-size: 75px;
     color:rgb(0, 221, 255);
     border-radius:20px;
@@ -104,10 +103,10 @@
     border:2px solid pink;
     background: rgba(15, 14, 15, 0.7);
     position:absolute;
-    margin-top:-540px;
+    margin-top:-460px;
 }
 .owner{
-    margin-top:900px;
+    margin-top:750px;
     color:rgb(219, 214, 214);
     font-size: 35px;
     white-space: nowrap;
@@ -129,7 +128,7 @@
     border: 1px solid yellow;
     border-radius: 8px;
     position:absolute;
-    margin-top:830px;
+    margin-top:678px;
     cursor:pointer;
     transition:all .5s;
 }
@@ -174,32 +173,32 @@
 @keyframes glow{
     0%{
         color:rgb(0, 0, 0);
-        font-size:50px;
+        font-size:40px;
         text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0,0,0, 0.8);
     }
     20%{
         color:rgb(255, 0, 208);
-        font-size:60px;
+        font-size:45px;
         text-shadow: 0 0 10px rgba(255, 0, 208,.6), 0 0 20px rgb(255, 0, 208,.6);
     }
     40%{
         color:yellow;
-        font-size:55px;
+        font-size:40px;
         text-shadow: 0 0 10px red, 0 0 20px yellow;
     }
     60%{
         color:rgb(255, 0, 0);
-        font-size:60px;
+        font-size:45px;
         text-shadow: 0 0 10px rgb(242, 255, 0), 0 0 20px rgb(255, 0, 0);
     }
     80%{
         color:rgb(25, 20, 20);
-        font-size:55px;
+        font-size:40px;
         text-shadow: 0 0 10px rgb(25, 20, 20), 0 0 20px rgb(25, 20, 20);
     }
     100%{
         color:rgb(0, 0, 254);
-        font-size:50px;
+        font-size:45px;
         text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgb(0, 0, 255,.6);
     }
 }
