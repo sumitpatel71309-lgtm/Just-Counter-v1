@@ -43,11 +43,19 @@ if(home){home.addEventListener('click',()=>{
 
 if(plus && minus && count && life){
 
+function triggerEvents(element,duration){
+    element.classList.add('active');
+    setTimeout(()=>{
+        element.classList.remove('active');
+        element.blur();
+    },300);
+}
+    
 let m = Number(plus.innerText);
 let n = Number(minus.innerText);
 let o = Number(life.innerText);
 
-plus.addEventListener('click',()=>{
+plus.addEventListener('pointerdown',()=>{
     if(navigator.vibrate){
         navigator.vibrate(300);
     }
@@ -69,13 +77,12 @@ plus.addEventListener('click',()=>{
    minus.innerText = n;
    count.innerText = `108 X ${total}`;
    life.innerText = o;
-   plus.classList.add('active');
-   setTimeout(()=>{
-    plus.classList.remove('active')},300)});
+   triggerEvents(plus,300);
+});
 
-minus.addEventListener('click',()=>{
+minus.addEventListener('pointerdown',()=>{
      if(navigator.vibrate){
-        navigator.vibrate(300);
+        navigator.vibrate(270);
     }
     if(o <= 0){
         return;
@@ -104,10 +111,7 @@ minus.addEventListener('click',()=>{
    minus.innerText = n;
    count.innerText = `108 X ${total}`;
    life.innerText = o;
-   minus.classList.add('active');
-   setTimeout(()=>{
-    minus.classList.remove('active')
-   },250);
+   triggerEvents(minus,270);
 });
 
 }
