@@ -17,7 +17,7 @@
     font-size:70px;
     font-weight: bold;
     display:flex;
-    margin-top:-350px;
+    margin-top:-300px;
     display:flex;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     position:absolute;
@@ -25,8 +25,8 @@
 
 }
 .start{
-    width:360px;
-    height:80px;
+    width:340px;
+    height:70px;
     color:rgb(0, 255, 8);
     background:white;
     border:3px solid rgb(0, 0, 255);
@@ -61,7 +61,7 @@
     }
     40%{
         color:rgb(255, 0, 0);
-        font-size:80px;
+        font-size:70px;
         text-shadow: 0 0 10px rgb(242, 255, 0), 0 0 20px rgb(25, 20, 20);
     }
     60%{
