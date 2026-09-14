@@ -32,7 +32,7 @@ if(document.location.pathname.includes('own.html')){
 }
 if(document.location.pathname.includes('jap.html')){
     mantra.loop = true;
-    mantra.volume =.3;
+    mantra.volume =.22;
     mantra.currentTime = 0;
     mantra.play();
 }
