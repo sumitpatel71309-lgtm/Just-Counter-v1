@@ -91,7 +91,7 @@ localStorage.setItem('total-t',o);
    minus.innerText = n;
    count.innerText = `108 X ${total}`;
    life.innerText = o;
-   triggerEffects(plus,300);
+   triggerEffects(plus,500);
 })
 
 minus.addEventListener('pointerdown',()=>{
@@ -129,7 +129,7 @@ localStorage.setItem('total-t',o);
    minus.innerText = n;
    count.innerText = `108 X ${total}`;
    life.innerText = o;
-   triggerEffects(minus,300);
+   triggerEffects(minus,500);
 });
 
 }
