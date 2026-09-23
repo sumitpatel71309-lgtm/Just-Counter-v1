@@ -67,7 +67,7 @@ if(window.location.pathname.includes("jap.html")){
 
 plus.addEventListener('pointerdown',()=>{
     if(navigator.vibrate){
-        navigator.vibrate(300);
+        navigator.vibrate(500);
     }
     m = m+1;
     n = n+1;
@@ -96,7 +96,7 @@ localStorage.setItem('total-t',o);
 
 minus.addEventListener('pointerdown',()=>{
      if(navigator.vibrate){
-        navigator.vibrate(300);
+        navigator.vibrate(500);
     }
     if(o <= 0){
         return;
