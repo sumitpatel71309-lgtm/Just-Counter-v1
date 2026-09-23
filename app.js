@@ -17,7 +17,6 @@ let minus = document.querySelector('.minus');
 let count = document.querySelector('.count');
 let life = document.querySelector('.life');
 let home = document.querySelector('.home');
-let total =0;
 if(start){start.addEventListener('click',()=>{
     window.location.href="own.html";
 })}
@@ -43,17 +42,28 @@ if(home){home.addEventListener('click',()=>{
 
 if(plus && minus && count && life){
 
-function triggerEvents(element,duration){
+function triggerEffects( element, duration){
     element.classList.add('active');
     setTimeout(()=>{
         element.classList.remove('active');
         element.blur();
-    },300);
+    },duration);
 }
-    
-let m = Number(plus.innerText);
-let n = Number(minus.innerText);
-let o = Number(life.innerText);
+
+let total = Number(localStorage.getItem('totalR'));
+let m = Number(localStorage.getItem('num-m'));
+let n = Number(localStorage.getItem('num-n'));
+let o = Number(localStorage.getItem('total-t'));
+if(window.location.pathname.includes("jap.html")){
+    function updateUI() {
+        plus.innerText = m;
+        minus.innerText = n;
+        count.innerText = `108 X ${total}`;
+        life.innerText = o;   
+    };
+
+    document.addEventListener('DOMContentLoaded', updateUI);
+};
 
 plus.addEventListener('pointerdown',()=>{
     if(navigator.vibrate){
@@ -73,16 +83,20 @@ plus.addEventListener('pointerdown',()=>{
         }
         complete.play();
    }
+localStorage.setItem('num-m',m);
+localStorage.setItem('num-n',n);
+localStorage.setItem('totalR',total);
+localStorage.setItem('total-t',o);
    plus.innerText = m;
    minus.innerText = n;
    count.innerText = `108 X ${total}`;
    life.innerText = o;
-   triggerEvents(plus,300);
-});
+   triggerEffects(plus,300);
+})
 
 minus.addEventListener('pointerdown',()=>{
      if(navigator.vibrate){
-        navigator.vibrate(270);
+        navigator.vibrate(300);
     }
     if(o <= 0){
         return;
@@ -107,11 +121,15 @@ minus.addEventListener('pointerdown',()=>{
      m = m-1;
      n = n-1;
    }
+localStorage.setItem('num-m',m);
+localStorage.setItem('num-n',n);
+localStorage.setItem('totalR',total);
+localStorage.setItem('total-t',o);
    plus.innerText = m;
    minus.innerText = n;
    count.innerText = `108 X ${total}`;
    life.innerText = o;
-   triggerEvents(minus,270);
+   triggerEffects(minus,300);
 });
 
 }
