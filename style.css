@@ -48,7 +48,7 @@
     color:rgb(8, 0, 255);
     font-size:70px;
     font-weight:bold;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-family: 'Anton', Impact, sans-serif;
 }
 .plus.active{
     width:350px;
@@ -59,7 +59,7 @@
     color:yellow;
     font-size:140px;
     font-weight:bold;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+   font-family: 'Anton', Impact, sans-serif;
 }
 .name{
     width:250px;
